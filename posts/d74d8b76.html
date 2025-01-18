@@ -43,7 +43,7 @@
 <meta name="generator" content="Hexo 5.2.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="alternate" href="/atom.xml" title="骑单车的猪儿虫" type="application/atom+xml">
-</head>
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
 
 
 
@@ -421,7 +421,7 @@
         
         <li><div class="divider"></div></li>
         <li>
-            <a href="https://github.com/1316584746" class="waves-effect waves-light" target="_blank">
+            <a href="https://github.com/1316584746/" class="waves-effect waves-light" target="_blank">
                 <i class="fab fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
@@ -478,7 +478,7 @@
     }
 </style>
 
-<a href="https://github.com/1316584746" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+<a href="https://github.com/1316584746/" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
    data-tooltip="Fork Me" data-position="left" data-delay="50">
     <svg viewBox="0 0 250 250" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -765,13 +765,13 @@
 <h4 id="2-安装node-js"><a href="#2-安装node-js" class="headerlink" title="2. 安装node.js"></a>2. 安装node.js</h4><p><code>Hexo</code>是基于<code>node.js</code>编写的，所以需要安装一下<code>node.js</code>和里面的<code>npm</code>工具。</p>
 <p><strong>windows：</strong> 到<a target="_blank" rel="noopener" href="http://nodejs.cn/download/">Node.js官网</a>下载<code>.exe</code>文件，安装选项全部默认。安装好之后，按<code>Win+R</code>打开cmd命令提示符，输入<code>node -v</code>和<code>npm -v</code>，若出现版本号，则说明安装成功。</p>
 <h4 id="3-添加npm国内源"><a href="#3-添加npm国内源" class="headerlink" title="3. 添加npm国内源"></a>3. 添加npm国内源</h4><p>使用阿里的国内镜像进行加速下载</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry https://registry.npm.taobao.org<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">npm config set registry https://registry.npm.taobao.org<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h4 id="4-安装Hexo"><a href="#4-安装Hexo" class="headerlink" title="4. 安装Hexo"></a>4. 安装Hexo</h4><p>前面<code>git</code>和<code>nodejs</code>安装好后，就可以安装<code>hexo</code>了，你可以先创建一个文件夹<code>MyBlog</code>，用来存放自己的博客文件，然后<code>cd</code>到这个文件夹下（或者在这个文件夹下直接鼠标右键<code>git bash</code>打开）。</p>
 <p>比如我的博客文件都存放在<code>C:\MyBlog</code>目录下。</p>
 <p>在该目录下右键点击<code>Git Bash Here</code>，打开<code>git</code>的控制台窗口，以后我们所有的操作都在<code>git</code>控制台进行，就不用<code>Windows</code>自带的<code>cmd</code>了。</p>
 <p>定位到该目录下，输入<code>npm install -g hexo-cli</code>安装<code>Hexo</code>。可能会有几个报错，不用理会。</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">npm install -g hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>安装完后输入<code>hexo -v</code>验证是否安装成功。</p>
 <p>接下来初始化一下<code>hexo</code>,即初始化我们的博客网站。例如我的在<code>C:\MyBlog</code>文件夹下的命令行中，输入<code>hexo init</code>初始化文件夹</p>
@@ -788,7 +788,7 @@
 </ul>
 <p>到此为止，本地的Hexo基础环境搭建完成了。</p>
 <h4 id="5-安装LuckyBlog"><a href="#5-安装LuckyBlog" class="headerlink" title="5. 安装LuckyBlog"></a>5. 安装LuckyBlog</h4><p>下载源代码到本地文件下</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/LuckyZmj/LuckyBlog.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">git clone https://github.com/LuckyZmj/LuckyBlog.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>将下载好的<code>LuckyBlog</code>全部复制到<code>MyBlog</code>目录下，如果复制过程中出现重复文件，点击替换。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20210518202657.png"></p>
@@ -804,37 +804,37 @@
 </blockquote>
 <h4 id="1-修改部署平台"><a href="#1-修改部署平台" class="headerlink" title="1. 修改部署平台"></a>1. 修改部署平台</h4><p>编辑根目录下的配置文件<code>MyBlog/_config.yml</code>，找到如下内容并修改</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">deploy:
-- type: <span class="token function">git</span>
-  repo: git@github.com:LuckyZmj/LuckyZmj.github.io.git <span class="token comment"># 替换为你的部署平台地址</span>
+- type: git
+  repo: git@github.com:LuckyZmj/LuckyZmj.github.io.git # 替换为你的部署平台地址
   branch: master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="2-修改网站信息"><a href="#2-修改网站信息" class="headerlink" title="2. 修改网站信息"></a>2. 修改网站信息</h4><p>编辑根目录下的配置文件<code>MyBlog/_config.yml</code>，找到如下内容并修改</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># Site</span>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"># Site
 title: Luckey
-subtitle: <span class="token string">'Luckeyの博客'</span>  
-description: <span class="token string">'本科 | 计算机科学与技术 | 网络安全'</span>
-keywords: <span class="token string">'luckyzmj 计算机 网络安全 渗透测试'</span>  <span class="token comment"># 博客网站关键词</span>
-author: Luckey   <span class="token comment"># 博主名称</span>
+subtitle: 'Luckeyの博客'  
+description: '本科 | 计算机科学与技术 | 网络安全'
+keywords: 'luckyzmj 计算机 网络安全 渗透测试'  # 博客网站关键词
+author: Luckey   # 博主名称
 language: zh-CN
-timezone: <span class="token string">''</span>
+timezone: ''
 
-<span class="token comment"># URL</span>
-<span class="token comment">## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'</span>
-url: http://www.luckyzmj.cn   <span class="token comment"># 更改为你的博客地址</span>
+# URL
+## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
+url: http://www.luckyzmj.cn   # 更改为你的博客地址
 root: /
-<span class="token comment"># permalink: :year/:month/:day/:title/</span>
-permalink: posts/:abbrlink.html  <span class="token comment"># p 是自定义的前缀</span>
+# permalink: :year/:month/:day/:title/
+permalink: posts/:abbrlink.html  # p 是自定义的前缀
 abbrlink:
-    alg: crc32   <span class="token comment">#算法： crc16(default) and crc32</span>
-    rep: hex     <span class="token comment">#进制： dec(default) and hex</span>
+    alg: crc32   #算法： crc16(default) and crc32
+    rep: hex     #进制： dec(default) and hex
 permalink_defaults:
 pretty_urls:
-  trailing_index: <span class="token boolean">true</span> <span class="token comment"># Set to false to remove trailing 'index.html' from permalinks</span>
-  trailing_html: <span class="token boolean">true</span> <span class="token comment"># Set to false to remove trailing '.html' from permalinks</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="3-修改博客头像"><a href="#3-修改博客头像" class="headerlink" title="3. 修改博客头像"></a>3. 修改博客头像</h4><p>编辑主题目录下的配置文件<code>MyBlog/themes/matery/_config.yml</code>，找到如下内容并修改</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># Configure website favicon and LOGO</span>
-<span class="token comment"># 将以下改为自己的头像链接即可</span>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"># Configure website favicon and LOGO
+# 将以下改为自己的头像链接即可
 favicon: https://s1.ax1x.com/2020/05/17/YR20js.jpg
 logo: https://s1.ax1x.com/2020/05/17/YRWsYT.png<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
@@ -844,16 +844,16 @@ logo: https://s1.ax1x.com/2020/05/17/YRWsYT.png<span aria-hidden="true" class="l
 <p>编辑 <code>/MyBlog/contact/index.md</code>，修改你想要内容即可</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">---
 title: contact
-date: <span class="token number">2019</span>-10-25 00:00:00
-type: <span class="token string">"contact"</span>
-layout: <span class="token string">"contact"</span>
+date: 2019-10-25 00:00:00
+type: "contact"
+layout: "contact"
 ---
 
-<span class="token comment">## 畅所欲言</span>
+## 畅所欲言
 ---
 在这里可以留下你的足迹，欢迎在下方留言，欢迎交换友链，一起交流学习！
 
-<span class="token comment">## 友链</span>
+## 友链
 ---
 Lucky_Meの友链信息
 
@@ -869,118 +869,118 @@ Lucky_Meの友链信息
 <p>以QQ音乐为例：先登录<a target="_blank" rel="noopener" href="https://y.qq.com/">QQ音乐网页版</a>，点击打开自己喜欢的音乐列表，在网页的URL处包含了音乐列表的id，如下图所示</p>
 <p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/posts/20200916213029.png"></p>
 <p>编辑主题目录下的配置文件<code>MyBlog/themes/matery/_config.yml</code>，找到如下内容并修改</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 默认是博主的QQ音乐的id，大家可以改为自己音乐喜欢列表的id</span>
-<span class="token comment"># 更新完id，就可以同步加载自己喜欢的列表音乐了</span>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"># 默认是博主的QQ音乐的id，大家可以改为自己音乐喜欢列表的id
+# 更新完id，就可以同步加载自己喜欢的列表音乐了
 
-<span class="token comment"># Whether to display the musics.</span>
-<span class="token comment"># 是否在首页显示音乐.</span>
+# Whether to display the musics.
+# 是否在首页显示音乐.
 music:
-  enable: <span class="token boolean">true</span>
-  title: <span class="token comment">#非吸底模式有效</span>
-    enable: <span class="token boolean">true</span>
+  enable: true
+  title: #非吸底模式有效
+    enable: true
     show: 听听音乐
-  autoHide: <span class="token boolean">true</span>    <span class="token comment"># hide automaticaly</span>
-  server: tencent   <span class="token comment">#require  music platform: netease, tencent, kugou, xiami, baidu</span>
-  type: playlist    <span class="token comment">#require song, playlist, album, search, artist</span>
-  id: <span class="token number">1776127550</span>     <span class="token comment">#require song id / playlist id / album id / search keyword</span>
-  fixed: <span class="token boolean">true</span>       <span class="token comment"># 开启吸底模式</span>
-  autoplay: <span class="token boolean">false</span>   <span class="token comment"># 是否自动播放</span>
-  theme: <span class="token string">'#42b983'</span>
-  loop: <span class="token string">'all'</span>       <span class="token comment"># 音频循环播放, 可选值: 'all', 'one', 'none'</span>
-  order: <span class="token string">'random'</span>   <span class="token comment"># 音频循环顺序, 可选值: 'list', 'random'</span>
-  preload: <span class="token string">'auto'</span>   <span class="token comment"># 预加载，可选值: 'none', 'metadata', 'auto'</span>
-  volume: <span class="token number">0.7</span>       <span class="token comment"># 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效</span>
-  listFolded: <span class="token boolean">true</span>  <span class="token comment"># 列表默认折叠</span>
-  hideLrc: <span class="token boolean">true</span>     <span class="token comment"># 隐藏歌词</span>
+  autoHide: true    # hide automaticaly
+  server: tencent   #require  music platform: netease, tencent, kugou, xiami, baidu
+  type: playlist    #require song, playlist, album, search, artist
+  id: 1776127550     #require song id / playlist id / album id / search keyword
+  fixed: true       # 开启吸底模式
+  autoplay: false   # 是否自动播放
+  theme: '#42b983'
+  loop: 'all'       # 音频循环播放, 可选值: 'all', 'one', 'none'
+  order: 'random'   # 音频循环顺序, 可选值: 'list', 'random'
+  preload: 'auto'   # 预加载，可选值: 'none', 'metadata', 'auto'
+  volume: 0.7       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
+  listFolded: true  # 列表默认折叠
+  hideLrc: true     # 隐藏歌词
 
-<span class="token comment"># Whether to display the musics.</span>
-<span class="token comment"># 单独的音乐页面.</span>
+# Whether to display the musics.
+# 单独的音乐页面.
 musics:
-  enable: <span class="token boolean">true</span>
-  title:          <span class="token comment">#非吸底模式有效</span>
-    enable: <span class="token boolean">true</span>
+  enable: true
+  title:          #非吸底模式有效
+    enable: true
     show: 听听音乐
-  server: tencent   <span class="token comment">#require music platform: netease, tencent, kugou, xiami, baidu</span>
-  type: playlist    <span class="token comment">#require song, playlist, album, search, artist</span>
-  id: <span class="token number">1776127550</span>     <span class="token comment">#require song id / playlist id / album id / search keyword</span>
-  fixed: <span class="token boolean">false</span>      <span class="token comment"># 开启吸底模式</span>
-  autoplay: <span class="token boolean">true</span>   <span class="token comment"># 是否自动播放</span>
-  theme: <span class="token string">'#42b983'</span>
-  loop: <span class="token string">'all'</span>       <span class="token comment"># 音频循环播放, 可选值: 'all', 'one', 'none'</span>
-  order: <span class="token string">'random'</span>   <span class="token comment"># 音频循环顺序, 可选值: 'list', 'random'</span>
-  preload: <span class="token string">'auto'</span>   <span class="token comment"># 预加载，可选值: 'none', 'metadata', 'auto'</span>
-  volume: <span class="token number">0.7</span>       <span class="token comment"># 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效</span>
-  listFolded: <span class="token boolean">false</span>  <span class="token comment"># 列表默认折叠</span>
-  listMaxHeight: <span class="token string">"525px"</span> <span class="token comment">#列表最大高度</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+  server: tencent   #require music platform: netease, tencent, kugou, xiami, baidu
+  type: playlist    #require song, playlist, album, search, artist
+  id: 1776127550     #require song id / playlist id / album id / search keyword
+  fixed: false      # 开启吸底模式
+  autoplay: true   # 是否自动播放
+  theme: '#42b983'
+  loop: 'all'       # 音频循环播放, 可选值: 'all', 'one', 'none'
+  order: 'random'   # 音频循环顺序, 可选值: 'list', 'random'
+  preload: 'auto'   # 预加载，可选值: 'none', 'metadata', 'auto'
+  volume: 0.7       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
+  listFolded: false  # 列表默认折叠
+  listMaxHeight: "525px" #列表最大高度<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="6-绑定-Valine-评论"><a href="#6-绑定-Valine-评论" class="headerlink" title="6. 绑定 Valine 评论"></a>6. 绑定 Valine 评论</h4><p>编辑主题目录下的配置文件<code>MyBlog/themes/matery/_config.yml</code>，找到如下内容并修改</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.</span>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"># Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
-  enable: <span class="token boolean">true</span>
-  appId: Ucrxxxxxxxxxxxxxxxx-xxxxsz  <span class="token comment"># 自行注册valine获取</span>
-  appKey: zPsLxxxxxxxxxxxxxxerLmd    <span class="token comment"># 自行注册valine获取</span>
-  notify: <span class="token boolean">true</span>
-  verify: <span class="token boolean">true</span>
-  visitor: <span class="token boolean">true</span>
-  avatar: <span class="token string">'monsterid'</span> <span class="token comment"># Gravatar style : mm/identicon/monsterid/wavatar/retro/hide</span>
-  pageSize: <span class="token number">10</span>
-  placeholder: <span class="token string">'留下你的足迹..'</span> <span class="token comment"># Comment Box placeholder</span>
+  enable: true
+  appId: Ucrxxxxxxxxxxxxxxxx-xxxxsz  # 自行注册valine获取
+  appKey: zPsLxxxxxxxxxxxxxxerLmd    # 自行注册valine获取
+  notify: true
+  verify: true
+  visitor: true
+  avatar: 'monsterid' # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
+  pageSize: 10
+  placeholder: '留下你的足迹..' # Comment Box placeholder
   background: /medias/comment_bg.png
-  count: <span class="token boolean">true</span>
-  enableQQ: <span class="token number">16463223</span>  <span class="token comment"># 改为自己的QQ号</span>
-  recordIP: <span class="token boolean">true</span>
+  count: true
+  enableQQ: 16463223  # 改为自己的QQ号
+  recordIP: true
   requiredFields: 
     - nick
     - mail
   guest_info: 
     - nick
     - mail
-    - <span class="token function">link</span>
+    - link
   master: 
-    - 46606772953bed0812789d6dc955614e  <span class="token comment"># md5加密后的博主邮箱</span>
-  metaPlaceholder:  <span class="token comment"># 输入框的背景文字</span>
-    nick: 昵称/QQ号<span class="token punctuation">(</span>必填<span class="token punctuation">)</span>
-    mail: 邮箱<span class="token punctuation">(</span>必填<span class="token punctuation">)</span>
-    link: 网址<span class="token punctuation">(</span>https://<span class="token punctuation">)</span>
+    - 46606772953bed0812789d6dc955614e  # md5加密后的博主邮箱
+  metaPlaceholder:  # 输入框的背景文字
+    nick: 昵称/QQ号(必填)
+    mail: 邮箱(必填)
+    link: 网址(https://)
   lang: zh-CN
-  tagMeta: <span class="token comment"># The String Array of Words to show Flag.[Just Only xCss Style mode]</span>
+  tagMeta: # The String Array of Words to show Flag.[Just Only xCss Style mode]
     - 博主
     - 小伙伴
     - 访客
-  friends: <span class="token comment"># The MD5 String Array of friends Email to show friends Flag.[Just Only xCss Style mode]</span>
+  friends: # The MD5 String Array of friends Email to show friends Flag.[Just Only xCss Style mode]
     - cb3e577ff029d6073400d5557effd41f   
     -<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="7-绑定-DaoVoice-在线聊天"><a href="#7-绑定-DaoVoice-在线聊天" class="headerlink" title="7. 绑定 DaoVoice 在线聊天"></a>7. 绑定 DaoVoice 在线聊天</h4><p>编辑主题目录下的配置文件<code>MyBlog/themes/matery/_config.yml</code>，找到如下内容并修改</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">daovoice:
-  enable: <span class="token boolean">true</span>
-  app_id: 4xxxxxxxe   <span class="token comment">#DaoVoice中的app_id</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+  enable: true
+  app_id: 4xxxxxxxe   #DaoVoice中的app_id<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="8-快捷导航页面个性化"><a href="#8-快捷导航页面个性化" class="headerlink" title="8. 快捷导航页面个性化"></a>8. 快捷导航页面个性化</h4><p>编辑文件<code>MyBlog/source/tools/index.html</code>，以下简单标记出几处，还有其他涉及到博客信息的内容都需要改为你自己的博客信息即可。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/posts/20200916235833.png"></p>
 <h4 id="9-添加友情链接"><a href="#9-添加友情链接" class="headerlink" title="9. 添加友情链接"></a>9. 添加友情链接</h4><p>编辑文件<code>MyBlog/suorce/_data/friends.json</code>，按如下格式添加友情</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token punctuation">[</span>
-    <span class="token punctuation">{</span>
-        <span class="token string">"avatar"</span><span class="token builtin class-name">:</span> <span class="token string">"https://s1.ax1x.com/2020/05/17/YRWsYT.png"</span>,
-        <span class="token string">"name"</span><span class="token builtin class-name">:</span> <span class="token string">"Luckey"</span>,
-        <span class="token string">"introduction"</span><span class="token builtin class-name">:</span> <span class="token string">"越努力，越幸运"</span>,
-        <span class="token string">"url"</span><span class="token builtin class-name">:</span> <span class="token string">"http://www.luckyzmj.cn"</span>,
-        <span class="token string">"title"</span><span class="token builtin class-name">:</span> <span class="token string">"访问主页"</span>
-    <span class="token punctuation">}</span>,<span class="token punctuation">{</span>
-      <span class="token string">"avatar"</span><span class="token builtin class-name">:</span> <span class="token string">"https://sunhwee.com/hwsun.jpg"</span>,
-      <span class="token string">"name"</span><span class="token builtin class-name">:</span> <span class="token string">"洪卫の博客"</span>,
-      <span class="token string">"introduction"</span><span class="token builtin class-name">:</span> <span class="token string">"UESTC CVer"</span>,
-      <span class="token string">"url"</span><span class="token builtin class-name">:</span> <span class="token string">"http://sunhwee.com"</span>,
-      <span class="token string">"title"</span><span class="token builtin class-name">:</span> <span class="token string">"访问主页"</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">[
+    {
+        "avatar": "https://s1.ax1x.com/2020/05/17/YRWsYT.png",
+        "name": "Luckey",
+        "introduction": "越努力，越幸运",
+        "url": "http://www.luckyzmj.cn",
+        "title": "访问主页"
+    },{
+      "avatar": "https://sunhwee.com/hwsun.jpg",
+      "name": "洪卫の博客",
+      "introduction": "UESTC CVer",
+      "url": "http://sunhwee.com",
+      "title": "访问主页"
+    }
+]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="10-添加相册"><a href="#10-添加相册" class="headerlink" title="10. 添加相册"></a>10. 添加相册</h4><p>比如你的图片上传图床后，链接地址如下</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/galleries/璀璨星空/01.jpg
 https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/galleries/璀璨星空/02.jpg
 https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/galleries/动漫风景/01.jpg
 https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/galleries/动漫风景/02.jpg
-<span class="token punctuation">..</span>.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+...<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>首先提取出图片链接公共的部分，作为图床地址</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/galleries/<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -990,13 +990,13 @@ https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/galleries/动漫风景/02.jpg
 璀璨星空/02.jpg
 动漫风景/01.jpg
 动漫风景/03.jpg
-<span class="token punctuation">..</span>.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+...<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <blockquote>
 <p>具体怎么分割根据你自己图床的链接格式而定，以上为我的github图床格式为例。</p>
 </blockquote>
 <p>将相册图床的地址改为你自己的图床地址，需要更改两处文件</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 例如我的图床地址为：</span>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"># 例如我的图床地址为：
 https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/galleries/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>themes/matery/layout/galleries.ejs</p>
@@ -1006,54 +1006,54 @@ https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/galleries/<span aria-hidden="true" c
 <p>为每个相册添加链接地址，在根目录/source/List/galleries/下新建 相册名称 文件夹，并在该文件夹下新建 <code>index.md</code> </p>
 <p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed/posts/20201008183808.png"></p>
 <p>最后，在根目录/source/_data/galleries.json中添加图片链接，格式如下,</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token punctuation">[</span>
-  <span class="token punctuation">{</span>
-    <span class="token string">"name"</span><span class="token builtin class-name">:</span> <span class="token string">"璀璨星空"</span>,
-    <span class="token string">"cover"</span><span class="token builtin class-name">:</span> <span class="token string">"璀璨星空/01.jpg"</span>,
-    <span class="token string">"description"</span><span class="token builtin class-name">:</span> <span class="token string">"璀璨星空"</span>,
-    <span class="token string">"photos"</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span>
-      <span class="token string">"璀璨星空/01.jpg"</span>,
-      <span class="token string">"璀璨星空/02.jpg"</span>,
-      <span class="token string">"璀璨星空/03.jpg"</span>,
-      <span class="token string">"璀璨星空/04.jpg"</span>,
-      <span class="token string">"璀璨星空/05.jpg"</span>,
-      <span class="token string">"璀璨星空/06.jpg"</span>,
-      <span class="token string">"璀璨星空/07.jpg"</span>,
-      <span class="token string">"璀璨星空/08.jpg"</span>,
-      <span class="token string">"璀璨星空/09.jpg"</span>,
-      <span class="token string">"璀璨星空/10.jpg"</span>,
-      <span class="token string">"璀璨星空/11.jpg"</span>,
-      <span class="token string">"璀璨星空/12.jpg"</span>,
-      <span class="token string">"璀璨星空/13.jpg"</span>,
-      <span class="token string">"璀璨星空/14.jpg"</span>,
-      <span class="token string">"璀璨星空/15.jpg"</span>,
-      <span class="token string">"璀璨星空/16.jpg"</span>
-    <span class="token punctuation">]</span>
-  <span class="token punctuation">}</span>,
-  <span class="token punctuation">{</span>
-    <span class="token string">"name"</span><span class="token builtin class-name">:</span> <span class="token string">"动漫风景"</span>,
-    <span class="token string">"cover"</span><span class="token builtin class-name">:</span> <span class="token string">"动漫风景/01.jpg"</span>,
-    <span class="token string">"description"</span><span class="token builtin class-name">:</span> <span class="token string">"动漫风景"</span>,
-    <span class="token string">"photos"</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span>
-      <span class="token string">"动漫风景/01.jpg"</span>,
-      <span class="token string">"动漫风景/02.jpg"</span>,
-      <span class="token string">"动漫风景/03.jpg"</span>,
-      <span class="token string">"动漫风景/04.jpg"</span>,
-      <span class="token string">"动漫风景/05.jpg"</span>,
-      <span class="token string">"动漫风景/06.jpg"</span>,
-      <span class="token string">"动漫风景/07.jpg"</span>,
-      <span class="token string">"动漫风景/08.jpg"</span>,
-      <span class="token string">"动漫风景/09.jpg"</span>,
-      <span class="token string">"动漫风景/10.jpg"</span>,
-      <span class="token string">"动漫风景/11.jpg"</span>,
-      <span class="token string">"动漫风景/12.jpg"</span>,
-      <span class="token string">"动漫风景/13.jpg"</span>,
-      <span class="token string">"动漫风景/14.jpg"</span>,
-      <span class="token string">"动漫风景/15.jpg"</span>,
-      <span class="token string">"动漫风景/16.jpg"</span>
-    <span class="token punctuation">]</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">[
+  {
+    "name": "璀璨星空",
+    "cover": "璀璨星空/01.jpg",
+    "description": "璀璨星空",
+    "photos": [
+      "璀璨星空/01.jpg",
+      "璀璨星空/02.jpg",
+      "璀璨星空/03.jpg",
+      "璀璨星空/04.jpg",
+      "璀璨星空/05.jpg",
+      "璀璨星空/06.jpg",
+      "璀璨星空/07.jpg",
+      "璀璨星空/08.jpg",
+      "璀璨星空/09.jpg",
+      "璀璨星空/10.jpg",
+      "璀璨星空/11.jpg",
+      "璀璨星空/12.jpg",
+      "璀璨星空/13.jpg",
+      "璀璨星空/14.jpg",
+      "璀璨星空/15.jpg",
+      "璀璨星空/16.jpg"
+    ]
+  },
+  {
+    "name": "动漫风景",
+    "cover": "动漫风景/01.jpg",
+    "description": "动漫风景",
+    "photos": [
+      "动漫风景/01.jpg",
+      "动漫风景/02.jpg",
+      "动漫风景/03.jpg",
+      "动漫风景/04.jpg",
+      "动漫风景/05.jpg",
+      "动漫风景/06.jpg",
+      "动漫风景/07.jpg",
+      "动漫风景/08.jpg",
+      "动漫风景/09.jpg",
+      "动漫风景/10.jpg",
+      "动漫风景/11.jpg",
+      "动漫风景/12.jpg",
+      "动漫风景/13.jpg",
+      "动漫风景/14.jpg",
+      "动漫风景/15.jpg",
+      "动漫风景/16.jpg"
+    ]
+  }
+]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="11-站点统计功能"><a href="#11-站点统计功能" class="headerlink" title="11. 站点统计功能"></a>11. 站点统计功能</h4><p>站点统计的数据来源于<a target="_blank" rel="noopener" href="https://tongji.baidu.com/web/welcome/login">百度统计</a>,当你的网站被百度收录后就会在百度统计中出现数据，具体效果如下：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20210518211242.png"></p>
@@ -1075,8 +1075,8 @@ https://cdn.jsdelivr.net/gh/LuckyZmj/LuckyBlog@master/themes/matery/source/media
 https://cdn.jsdelivr.net/gh/LuckyZmj/LuckyBlog@master/themes/matery/source/medias/banner/7.jpg<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p><strong>无文章特色背景图：</strong> 打开主题配置文件<code>MyBlog\themes\matery\_config.yml</code>，修改替换如下代码即可：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># The post featured images that needs to be displayed when there is no image.</span>
-<span class="token comment"># 无文章特色图片时需要显示的文章特色图片.</span>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"># The post featured images that needs to be displayed when there is no image.
+# 无文章特色图片时需要显示的文章特色图片.
 featureImages: 
 - https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/galleries/%E5%8A%A8%E6%BC%AB%E9%A3%8E%E6%99%AF/01.jpg
 - https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/galleries/%E5%8A%A8%E6%BC%AB%E9%A3%8E%E6%99%AF/02.jpg
@@ -1791,60 +1791,6 @@ new Valine({
 
 
     <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="tencent"
-                   type="playlist"
-                   id="99"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-
     
     <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
